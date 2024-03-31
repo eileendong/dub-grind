@@ -9,10 +9,12 @@ body, html {
 #popup-content {
     color: #050A18; /* Husky Dark Gray for text */
     text-align: center;
+    
 }
 
 header {
     display: flex;
+    height: 30px;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
@@ -21,6 +23,8 @@ header {
 
 header h1 {
     color: #050A18; /* Husky White for the text */
+    font-size: small;
+    padding: 10px;
 }
 
 main {
