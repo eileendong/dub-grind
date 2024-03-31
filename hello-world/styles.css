@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Updated font-family */
+}
+
+#popup-content {
+    text-align: center;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main {
+    margin-top: 20px;
+}
+
+#mascot-container img {
+    width: 50px;
+    height: auto;
+}
+
+#message-container p {
+    display: none; /* Hide the original message container */
+}
+
+/* Added chat bubble around the message */
+#message-bubble {
+    position: relative;
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+#message-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #f0f0f0;
+    border-bottom: 0;
+    margin-left: -15px;
+    margin-bottom: -15px;
+}
+
+/* Align the Yes and Maybe Later buttons horizontally */
+#response-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.response-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #4CAF50; /* Default green background */
+    color: white;
+    flex: 1 1 auto; /* Make buttons the same size */
+}
+
+#yes {
+    /* No need for specific styles, will use .response-button styles */
+}
+
+#maybe-later {
+    background-color: #f44336; /* Red background for Maybe Later button */
+}
+
+#more-info, #menu {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
