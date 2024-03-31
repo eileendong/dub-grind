@@ -1,90 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body, html {
-    height: 100%;
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Updated font-family */
+    font-family: 'Roboto', sans-serif;
+    background-color: #E9E7EA; /* Husky White for the background */
 }
 
 #popup-content {
+    color: #050A18; /* Husky Dark Gray for text */
     text-align: center;
-    padding: 15px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    background-color: #dbbfea; /* Husky Gray */
 }
 
-#main {
-    margin-top: 20px;
+header h1 {
+    color: #050A18; /* Husky White for the text */
+}
+
+main {
+    padding: 10px;
+}
+
+main h2 {
+    color: #0F1027; /* Husky Dark Gray */
+    margin-bottom: 20px;
 }
 
 #mascot-container img {
-    width: 50px;
+    display: block;
+    margin: 0 auto;
+    width: 300px; /* Adjust as needed */
     height: auto;
 }
 
-#message-container p {
-    display: none; /* Hide the original message container */
-}
-
-/* Added chat bubble around the message */
-#message-bubble {
-    position: relative;
-    background: #f0f0f0;
-    border-radius: 8px;
-    padding: 10px;
-    display: inline-block;
-    margin: 20px auto;
-    font-size: 16px;
-}
-
-#message-bubble::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border: 15px solid transparent;
-    border-top-color: #f0f0f0;
-    border-bottom: 0;
-    margin-left: -15px;
-    margin-bottom: -15px;
-}
-
-/* Align the Yes and Maybe Later buttons horizontally */
-#response-buttons {
+#button-container {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 20px;
 }
 
-.response-button {
-    margin: 10px;
-    padding: 10px 20px;
+.action-button {
+    background-color: #727282; /* Button Gray */
+    color: #FDFFFD; /* Husky Dark Gray for text */
     border: none;
-    border-radius: 5px; 
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold; /* Makes the text bold */
+    border-radius: 20px; /* Rounded corners for buttons */
+    box-shadow: 6px 6px 8px #1F2234; /* Shadow effect */
     cursor: pointer;
-    font-size: 14px;
-    background-color: #4CAF50; /* Default green background */
-    color: white;
-    flex: 1 1 auto; /* Make buttons the same size */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;;
+}
+
+.action-button:hover {
+    background-color: #A885D8; /* Bandana Light Purple for hover state */
+    color: #727282; /* Husky White */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow for hover state */
+    transform: translateY(-2px); /* Slightly raise the button when hovered */
 }
 
 #yes {
-    /* No need for specific styles, will use .response-button styles */
+    /* No additional specific styles needed */
 }
 
-#maybe-later {
-    background-color: #f44336; /* Red background for Maybe Later button */
+#no {
+    /* No additional specific styles needed */
 }
 
-#more-info, #menu {
+nav button {
     background: none;
     border: none;
-    font-size: 24px;
     cursor: pointer;
+    color: #FFFFFF; /* Husky White for icon buttons */
 }

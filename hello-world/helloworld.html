@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Popup</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="popup-content">
-  <header>
-    <h1>Dub Grind</h1>
-    <nav>
-      <button id="more-info">ℹ️</button>
-      <button id="menu">☰</button>
-    </nav>
-  </header>
-  <section id="main">
-    <div id="mascot-container">
-      <!-- Mascot image goes here, use an actual img tag with a src attribute -->
-      <img src="dubs-irl.png" alt="Mascot">
-    </div>
-    <div id="message-bubble">
-        <p>Hey! Want to start a study session?</p>
+  <div id="popup-content">
+    <header>
+      <h1>Dub Grind</h1>
+      <nav>
+        <button id="more-info">ℹ️</button>
+        <button id="menu">☰</button>
+      </nav>
+    </header>
+    <main id="main">
+      <h2>Ready for a focused study session?</h2>
+      <div id="mascot-container">
+        <img src="dubs-irl.png" alt="Mascot" />
       </div>
-      <div id="response-buttons">
-        <button class="response-buttons" id="yes">Yes</button>
-        <button class="response-buttons" id="maybe-later">Maybe Later</button>
+      <div id="button-container">
+        <button class="action-button" id="yes">Yes</button>
+        <button class="action-button" id="no">No</button>
       </div>
-  </section>
-</div>
+    </main>
+  </div>
 </body>
 </html>
