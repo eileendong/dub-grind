@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     background-color: #dbbfea; /* Husky Gray */
 }
 
@@ -24,12 +24,12 @@ header h1 {
 }
 
 main {
-    padding: 10px;
+    padding: 5px;
 }
 
 main h2 {
     color: #0F1027; /* Husky Dark Gray */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #mascot-container img {
@@ -61,7 +61,7 @@ main h2 {
 
 .action-button:hover {
     background-color: #A885D8; /* Bandana Light Purple for hover state */
-    color: #727282; /* Husky White */
+   /* color: #727282; /* Husky White */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow for hover state */
     transform: translateY(-2px); /* Slightly raise the button when hovered */
 }
