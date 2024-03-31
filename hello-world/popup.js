@@ -17,8 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
     yesBtn.addEventListener('click', function () {
         // Handle Yes button click
         // You can perform any action here, such as starting a study session
+        console.log("Yes button clicked!");
         chrome.tabs.create({ url: "https://canvas.uw.edu/" });
     });
+    
 
     maybeLaterBtn.addEventListener('click', function () {
         // Handle Maybe Later button click
